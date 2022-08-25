@@ -12,5 +12,6 @@
 		<Fab />
 		<Navbar />
 		<slot />
+		<Footer />
 	</div>
 </div>
