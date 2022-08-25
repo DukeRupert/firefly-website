@@ -14,7 +14,7 @@
 			on:click={() => (showActions = !showActions)}
 			class="text-background bg-gradient-to-r {showActions
 				? ' from-red-400 to-red-600 hover:from-red-300 hover:to-red-500'
-				: ' from-primary-400 to-primary-600 hover:from-primary-300 hover:to-primary-500'} w-12 h-12 rounded-full flex items-center justify-center hover:animate-pulse hover:scale-105 transition-all duration-150 ease-out"
+				: ' from-secondary-400 to-secondary-600 hover:from-secondary-300 hover:to-secondary-500'} w-12 h-12 rounded-full flex items-center justify-center hover:animate-pulse hover:scale-105 transition-all duration-150 ease-out"
 		>
 			{#if showActions}
 				<svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,7 +63,7 @@
 				in:fly={{ delay: delay, duration: duration, x: x, easing: quintOut }}
 				out:fly={{ duration: duration, x: x, easing: quintIn }}
 				href={'mailto:' + CONTACT.email}
-				class="mb-4 text-background bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-300 hover:to-blue-500 w-12 h-12 rounded-full flex items-center justify-center hover:animate-pulse hover:scale-105"
+				class="mb-4 text-background bg-gradient-to-r from-secondary-400 to-secondary-600 hover:from-secondary-300 hover:to-secondary-500 w-12 h-12 rounded-full flex items-center justify-center hover:animate-pulse hover:scale-105"
 				><svg
 					class="h-8 w-8"
 					width="24"

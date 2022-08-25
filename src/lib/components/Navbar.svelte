@@ -3,8 +3,8 @@
 	import { LOGO } from '$lib/constants';
 	const links = [
 		{ label: 'services', href: '/#services' },
-		{ label: 'our team', href: '/#our-team' },
-		{ label: 'company', href: '/#company' }
+		{ label: 'Our team', href: '/#our-team' },
+		{ label: 'Company', href: '/#company' }
 	];
 
 	function openMenu(): void {
@@ -67,7 +67,11 @@
 					<a {href} class="font-medium text-gray-500 hover:text-gray-900 capitalize">{label}</a>
 				{/each}
 
-				<a href="#" class="font-medium text-primary-600 hover:text-primary-500">Log in</a>
+				<a
+					href="#"
+					class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-background bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-400 hover:to-secondary-500"
+					>Log in</a
+				>
 			</div>
 		</nav>
 	</div>
@@ -111,14 +115,14 @@
 				{#each links as { label, href }}
 					<a
 						{href}
-						class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 capitalize"
+						class="block px-3 py-2 rounded-md capitalize text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 "
 						>{label}</a
 					>
 				{/each}
 			</div>
 			<a
 				href="#"
-				class="block w-full px-5 py-3 text-center font-medium capitalize text-primary-600 bg-gray-50 hover:bg-gray-100"
+				class="block w-full px-5 py-3 text-center font-medium capitalize text-background bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-400 hover:to-secondary-500"
 			>
 				Log in
 			</a>

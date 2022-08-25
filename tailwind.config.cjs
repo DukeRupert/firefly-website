@@ -17,6 +17,19 @@ const config = {
 					800: '#762900',
 					900: '#3E1500'
 				},
+				secondary: {
+					DEFAULT: '#186FD1',
+					50: '#ABCEF5',
+					100: '#99C3F3',
+					200: '#74AEEF',
+					300: '#5099EB',
+					400: '#2B83E7',
+					500: '#186FD1',
+					600: '#12549F',
+					700: '#0C3A6C',
+					800: '#071F3A',
+					900: '#010408'
+				},
 				background: '#fff'
 			},
 			transitionTimingFunction: {
