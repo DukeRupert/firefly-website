@@ -1,5 +1,5 @@
 <script lang="ts">
-	const FeatureCloud = {
+	const ServiceCloud = {
 		subtitle: 'Services',
 		title: 'A better way to send money',
 		text: `Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam voluptatum cupiditate
@@ -48,20 +48,20 @@
 <div id="services" class="py-12 bg-background">
 	<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="lg:text-center">
-			<h2 class="text-lg text-primary-600 font-semibold">{FeatureCloud.subtitle}</h2>
+			<h2 class="text-lg text-primary-600 font-semibold">{ServiceCloud.subtitle}</h2>
 			<p
 				class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight"
 			>
-				{FeatureCloud.title}
+				{ServiceCloud.title}
 			</p>
 			<p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-				{FeatureCloud.text}
+				{ServiceCloud.text}
 			</p>
 		</div>
 
 		<div class="mt-10">
 			<dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-				{#each FeatureCloud.features as { title, text, icon }}
+				{#each ServiceCloud.features as { title, text, icon }}
 					<div class="relative">
 						<dt>
 							<div

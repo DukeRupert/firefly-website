@@ -6,3 +6,11 @@ export const LOGO = {
 		alt: 'Workflow'
 	}
 };
+
+export const CONTACT = {
+	phone: {
+		string: '123-456-7890',
+		href: 'tel:1234567890'
+	},
+	email: 'info@companyname.com'
+};
