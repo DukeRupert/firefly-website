@@ -75,8 +75,8 @@
 	<!-- Mobile Menu -->
 	<div
 		class="absolute {$isMobileMenu
-			? 'expo-in opacity-100 translate-x-0 z-10'
-			: 'expo-out  opacity-75 translate-x-full -z-10'} top-0 inset-x-0 p-2 transition transform origin-top-right duration-500 md:hidden"
+			? 'expo-in opacity-100 translate-x-0 z-20'
+			: 'expo-out opacity-75 translate-x-full -z-10'} top-0 inset-x-0 p-2 transition transform origin-top-right duration-500 md:hidden"
 	>
 		<div
 			class="rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden"
