@@ -118,7 +118,7 @@
 			</div>
 			<a
 				href="#"
-				class="block w-full px-5 py-3 text-center font-medium text-primary-600 bg-gray-50 hover:bg-gray-100"
+				class="block w-full px-5 py-3 text-center font-medium capitalize text-primary-600 bg-gray-50 hover:bg-gray-100"
 			>
 				Log in
 			</a>

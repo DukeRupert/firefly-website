@@ -2,10 +2,10 @@
 	//Todo
 </script>
 
-<div class="py-12 bg-white">
-	<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div id="services" class="py-12 bg-background">
+	<div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
 		<div class="lg:text-center">
-			<h2 class="text-lg text-indigo-600 font-semibold">Transactions</h2>
+			<h2 class="text-lg text-primary-600 font-semibold">Services</h2>
 			<p
 				class="mt-2 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:tracking-tight"
 			>
@@ -22,7 +22,7 @@
 				<div class="relative">
 					<dt>
 						<div
-							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-background"
 						>
 							<!-- Heroicon name: outline/globe-alt -->
 							<svg
@@ -54,7 +54,7 @@
 				<div class="relative">
 					<dt>
 						<div
-							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white"
 						>
 							<!-- Heroicon name: outline/scale -->
 							<svg
@@ -84,7 +84,7 @@
 				<div class="relative">
 					<dt>
 						<div
-							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white"
 						>
 							<!-- Heroicon name: outline/lightning-bolt -->
 							<svg
@@ -114,7 +114,7 @@
 				<div class="relative">
 					<dt>
 						<div
-							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"
+							class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-background"
 						>
 							<!-- Heroicon name: outline/annotation -->
 							<svg

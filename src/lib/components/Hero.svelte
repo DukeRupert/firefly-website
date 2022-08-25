@@ -15,7 +15,7 @@
 			href: '#'
 		},
 		image: {
-			src: '/images/warm_railroad.jpeg',
+			src: '/images/train.jpg',
 			alt: 'A railroad extending out into the plains and a warm sunset.'
 		}
 	};
@@ -35,7 +35,7 @@
 				<div class="rounded-md shadow">
 					<a
 						href={Hero.primaryAction.href}
-						class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background capitalize bg-primary-600 hover:bg-primary-500 md:py-4 md:text-lg md:px-10"
+						class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background capitalize bg-gradient-to-r from-primary-500 to-primary-700 hover:from-primary-400 hover:to-primary-600 md:py-4 md:text-lg md:px-10"
 					>
 						{Hero.primaryAction.label}
 					</a>
@@ -52,12 +52,8 @@
 		</div>
 	</div>
 	<div
-		class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full"
+		class="relative w-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full flex items-center justify-center"
 	>
-		<img
-			class="absolute inset-0 w-full h-full object-cover"
-			src={Hero.image.src}
-			alt={Hero.image.alt}
-		/>
+		<img class="object-cover w-full h-auto" src={Hero.image.src} alt={Hero.image.alt} />
 	</div>
 </main>

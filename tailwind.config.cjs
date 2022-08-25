@@ -5,17 +5,17 @@ const config = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#FA5B0F',
-					50: '#FED6C3',
-					100: '#FDC8AF',
-					200: '#FCAD87',
-					300: '#FC925F',
-					400: '#FB7637',
-					500: '#FA5B0F',
-					600: '#CD4504',
-					700: '#963303',
-					800: '#5F2002',
-					900: '#280D01'
+					DEFAULT: '#FF6D1F',
+					50: '#FFE5D7',
+					100: '#FFD7C2',
+					200: '#FFBD99',
+					300: '#FFA271',
+					400: '#FF8848',
+					500: '#FF6D1F',
+					600: '#E65000',
+					700: '#AE3D00',
+					800: '#762900',
+					900: '#3E1500'
 				},
 				background: '#fff'
 			},
@@ -26,7 +26,7 @@ const config = {
 		}
 	},
 
-	plugins: [require('@tailwindcss/forms')]
+	plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')]
 };
 
 module.exports = config;
