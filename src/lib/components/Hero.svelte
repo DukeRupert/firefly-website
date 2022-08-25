@@ -1,18 +1,18 @@
 <script lang="ts">
 	const Hero = {
 		title: {
-			text: 'Data to enrich your',
-			focus: 'online business'
+			text: 'Empowering rail with',
+			focus: 'modern solutions'
 		},
 		text: `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
 				Elit sunt amet fugiat veniam occaecat fugiat aliqua.`,
 		primaryAction: {
 			label: 'get started',
-			href: '#'
+			href: '#contact-us'
 		},
 		secondaryAction: {
-			label: 'live demo',
-			href: '#'
+			label: 'learn more',
+			href: '#services'
 		},
 		image: {
 			src: '/images/train.jpg',
