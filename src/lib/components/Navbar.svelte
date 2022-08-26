@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { isMobileMenu } from '$lib/stores/App';
 	import { LOGO } from '$lib/constants';
+
+	const login = '/login';
+
 	const links = [
 		{ label: 'services', href: '/#services' },
 		{ label: 'Our team', href: '/#our-team' },
@@ -68,7 +71,7 @@
 				{/each}
 
 				<a
-					href="#"
+					href={login}
 					class="inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-background bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-400 hover:to-secondary-500"
 					>Log in</a
 				>
@@ -121,7 +124,7 @@
 				{/each}
 			</div>
 			<a
-				href="#"
+				href={login}
 				class="block w-full px-5 py-3 text-center font-medium capitalize text-background bg-gradient-to-r from-secondary-500 to-secondary-600 hover:from-secondary-400 hover:to-secondary-500"
 			>
 				Log in
