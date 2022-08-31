@@ -1,16 +1,28 @@
 export const LOGO = {
-	label: 'Workflow',
-	href: '#',
+	label: 'Ten Mile Creek Brewing',
+	href: '/',
 	img: {
-		src: 'https://tailwindui.com/img/logos/workflow-mark.svg?color=primary&shade=600',
-		alt: 'Workflow'
+		src: '/images/Ten-Mile-Creek-Brewing-No-Circle.png',
+		alt: 'Ten Mile Creek Brewing'
 	}
 };
 
 export const CONTACT = {
 	phone: {
-		string: '123-456-7890',
-		href: 'tel:1234567890'
+		string: '406-502-1382',
+		href: 'tel:4065021382'
+	},
+	location: {
+		address: '48 N Last Chance Gulch',
+		city: 'Helena',
+		state: 'MT',
+		zip: '59601'
 	},
 	email: 'info@companyname.com'
+};
+
+export const COMPANY = {
+	name: 'Ten Mile Creek Brewing',
+	logo: LOGO,
+	contact: CONTACT
 };
