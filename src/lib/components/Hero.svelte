@@ -1,8 +1,8 @@
 <script lang="ts">
 	const Hero = {
 		title: {
-			text: 'Empowering rail with',
-			focus: 'modern solutions'
+			text: 'A somewhat organized',
+			focus: 'community'
 		},
 		text: `Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
 				Elit sunt amet fugiat veniam occaecat fugiat aliqua.`,
@@ -15,45 +15,48 @@
 			href: '#services'
 		},
 		image: {
-			src: '/images/train.jpg',
-			alt: 'A railroad extending out into the plains and a warm sunset.'
+			src: '/images/beer_flight.jpg',
+			alt: 'A flight of five beers on a bar.'
 		}
 	};
 </script>
 
-<main class="lg:relative">
-	<div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
-		<div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-			<h1
-				class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl sm:tracking-tight md:text-6xl md:tracking-tight lg:text-5xl lg:tracking-tight xl:text-6xl xl:tracking-tight"
-			>
-				<span class="block xl:inline">{Hero.title.text}</span>
-				<span class="block text-primary-600 xl:inline">{Hero.title.focus}</span>
-			</h1>
-			<p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl" />
-			<div class="mt-10 sm:flex sm:justify-center lg:justify-start">
-				<div class="rounded-md shadow">
-					<a
-						href={Hero.primaryAction.href}
-						class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background capitalize bg-gradient-to-r from-primary-500 to-primary-700 hover:from-primary-400 hover:to-primary-600 md:py-4 md:text-lg md:px-10"
-					>
-						{Hero.primaryAction.label}
-					</a>
+<div>
+	<!-- Hero card -->
+	<div class="relative">
+		<div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
+		<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+			<div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+				<div class="absolute inset-0">
+					<img class="h-full w-full object-cover" src={Hero.image.src} alt={Hero.image.alt} />
+					<div class="absolute inset-0 opacity-30 bg-gray-700 mix-blend-multiply" />
 				</div>
-				<div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-					<a
-						href={Hero.secondaryAction.href}
-						class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md capitalize text-primary-600 bg-background hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
-					>
-						{Hero.secondaryAction.label}
-					</a>
+				<div class="relative px-4 py-24 sm:px-6 sm:py-32 lg:py-40 lg:px-8">
+					<h1 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+						<span class="block text-white">{Hero.title.text}</span>
+						<span class="block text-primary-200">{Hero.title.focus}</span>
+						<!-- </h1>
+					<p class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
+						Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat
+						commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+					</p> -->
+						<!-- <div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
+						<div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
+							<a
+								href="#"
+								class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8"
+								>Get started</a
+							>
+							<a
+								href="#"
+								class="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+								>Live demo</a
+							>
+						</div>
+					</div> -->
+					</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div
-		class="relative w-full lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full flex items-center justify-center"
-	>
-		<img class="object-cover w-full h-auto" src={Hero.image.src} alt={Hero.image.alt} />
-	</div>
-</main>
+</div>

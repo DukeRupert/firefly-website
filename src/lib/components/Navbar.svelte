@@ -21,27 +21,17 @@
 	}
 </script>
 
-<svg
-	class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-background transform translate-x-1/2"
-	fill="currentColor"
-	viewBox="0 0 100 100"
-	preserveAspectRatio="none"
-	aria-hidden="true"
->
-	<polygon points="50,0 100,0 50,100 0,100" />
-</svg>
-
 <div>
 	<div class="relative pt-6 px-4 sm:px-6 lg:px-8">
 		<nav
-			class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+			class="relative flex items-center justify-between sm:h-36 lg:justify-start"
 			aria-label="Global"
 		>
 			<div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
 				<div class="flex items-center justify-between w-full md:w-auto">
 					<a href={LOGO.href}>
 						<span class="sr-only">{LOGO.label}</span>
-						<img alt={LOGO.img.alt} class="h-8 w-auto sm:h-10" src={LOGO.img.src} />
+						<img alt={LOGO.img.alt} class="h-16 w-auto sm:h-36" src={LOGO.img.src} />
 					</a>
 					<div class="-mr-2 flex items-center md:hidden">
 						<button
