@@ -7,6 +7,14 @@ export const LOGO = {
 	}
 };
 
+export const LINKS = [
+	{ label: 'Beer', href: '/#beer' },
+	{ label: 'Events', href: '/#events' },
+	{ label: 'About', href: '/#about' },
+	{ label: 'Contact', href: '/#contact' },
+	{ label: 'Shop', href: '/#shop' }
+];
+
 export const CONTACT = {
 	phone: {
 		string: '406-502-1382',
@@ -21,10 +29,17 @@ export const CONTACT = {
 	email: 'info@companyname.com'
 };
 
+export const SOCIAL = [
+	{ type: 'facebook', href: 'https://www.facebook.com/TenMileCreekBrewery/' },
+	{ type: 'instagram', href: 'https://www.instagram.com/explore/locations/1019701299/' }
+];
+
 export const COMPANY = {
 	name: 'Ten Mile Creek Brewing',
 	logo: LOGO,
-	contact: CONTACT
+	contact: CONTACT,
+	social: SOCIAL,
+	year: 2022
 };
 
 export const EVENTS = {

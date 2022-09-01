@@ -1,16 +1,8 @@
 <script lang="ts">
 	import { isMobileMenu } from '$lib/stores/App';
-	import { LOGO } from '$lib/constants';
+	import { LOGO, LINKS } from '$lib/constants';
 
 	const login = '';
-
-	const links = [
-		{ label: 'Beer', href: '/#beer' },
-		{ label: 'Events', href: '/#events' },
-		{ label: 'About', href: '/#about' },
-		{ label: 'Contact', href: '/#contact' },
-		{ label: 'Shop', href: '/#shop' }
-	];
 
 	function openMenu(): void {
 		$isMobileMenu = true;
@@ -58,7 +50,7 @@
 				</div>
 			</div>
 			<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-				{#each links as { label, href }}
+				{#each LINKS as { label, href }}
 					<a {href} class="font-medium text-gray-500 hover:text-gray-900 capitalize">{label}</a>
 				{/each}
 
@@ -109,7 +101,7 @@
 				</div>
 			</div>
 			<div class="px-2 pt-2 pb-3 space-y-1">
-				{#each links as { label, href }}
+				{#each LINKS as { label, href }}
 					<a
 						{href}
 						class="block px-3 py-2 rounded-md capitalize text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 "
