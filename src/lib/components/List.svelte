@@ -1,9 +1,6 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
 	import { quartOut } from 'svelte/easing';
-	import { page } from '$app/stores';
-	import { goto } from '$app/navigation';
-	import { get } from 'svelte/store';
 
 	interface Event {
 		title: string;

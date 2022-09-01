@@ -3,12 +3,11 @@
 	import Events from '$lib/components/Events.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import LogoCloud from '$lib/components/LogoCloud.svelte';
-	import Services from '$lib/components/Services.svelte';
-	import Team from '$lib/components/Team.svelte';
+	import Card from '$lib/components/Card.svelte';
+	import { EVENTS } from '$lib/constants';
 </script>
 
 <Hero />
 <LogoCloud />
-<Events />
-<Team />
-<Cta />
+<Events Events={EVENTS} />
+<Card />
