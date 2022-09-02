@@ -43,7 +43,7 @@
 							<button
 								id={item.slug}
 								on:click={openEvent}
-								class="inline-flex items-center rounded-full border border-gray-300 bg-white px-2.5 py-0.5 text-sm font-medium leading-5 text-gray-700 shadow-sm hover:bg-gray-50"
+								class="inline-flex items-center rounded-full border border-gray-300 bg-white px-2.5 py-0.5 text-sm font-medium leading-5 text-primary-400 shadow-sm hover:bg-gray-50"
 								>View</button
 							>
 						</div>
@@ -61,7 +61,7 @@
 <div class="mt-6">
 	<a
 		href="#"
-		class="flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50"
+		class="flex w-full items-center justify-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-primary-500 shadow-sm hover:bg-gray-50"
 		>View all</a
 	>
 </div>

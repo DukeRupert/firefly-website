@@ -4,7 +4,9 @@
 
 <!-- This example requires Tailwind CSS v2.0+ -->
 <footer class="bg-white">
-	<div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
+	<div
+		class="mx-auto max-w-7xl overflow-hidden mt-16 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-700"
+	>
 		<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
 			{#each LINKS as { label, href }}
 				<div class="px-5 py-2">

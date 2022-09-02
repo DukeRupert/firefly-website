@@ -5,7 +5,7 @@
 </script>
 
 <div class="relative">
-	<div class="absolute inset-x-0 top-0 h-1/2 bg-gray-100" />
+	<div class="absolute inset-x-0 top-0 h-1/2 bg-secondary-500" />
 	<div class="relative  py-8 sm:py-16">
 		<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 			<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">

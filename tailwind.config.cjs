@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
@@ -5,32 +7,35 @@ const config = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#FF6D1F',
-					50: '#FFE5D7',
-					100: '#FFD7C2',
-					200: '#FFBD99',
-					300: '#FFA271',
-					400: '#FF8848',
-					500: '#FF6D1F',
-					600: '#E65000',
-					700: '#AE3D00',
-					800: '#762900',
-					900: '#3E1500'
+					DEFAULT: '#A6450D',
+					50: '#F4A476',
+					100: '#F39863',
+					200: '#F07F3E',
+					300: '#ED6618',
+					400: '#CC5510',
+					500: '#A6450D',
+					600: '#722F09',
+					700: '#3E1A05',
+					800: '#0A0401',
+					900: '#000000'
 				},
 				secondary: {
-					DEFAULT: '#186FD1',
-					50: '#ABCEF5',
-					100: '#99C3F3',
-					200: '#74AEEF',
-					300: '#5099EB',
-					400: '#2B83E7',
-					500: '#186FD1',
-					600: '#12549F',
-					700: '#0C3A6C',
-					800: '#071F3A',
-					900: '#010408'
+					DEFAULT: '#D9AE89',
+					50: '#FFFFFF',
+					100: '#FFFFFF',
+					200: '#F7EEE6',
+					300: '#EDD8C7',
+					400: '#E3C3A8',
+					500: '#D9AE89',
+					600: '#CB915F',
+					700: '#B7743B',
+					800: '#8C592D',
+					900: '#623E20'
 				},
 				background: '#fff'
+			},
+			fontFamily: {
+				sans: ['Playfair Display', ...defaultTheme.fontFamily.sans]
 			},
 			transitionTimingFunction: {
 				'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
