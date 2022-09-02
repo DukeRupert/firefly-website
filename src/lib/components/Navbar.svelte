@@ -59,7 +59,7 @@
 			</div>
 			<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
 				{#each LINKS as { label, href }}
-					<a {href} class="font-medium text-gray-800 hover:text-gray-900 capitalize">{label}</a>
+					<a {href} class="font-medium text-gray-800 hover:text-primary-400 capitalize">{label}</a>
 				{/each}
 
 				{#if login}
@@ -118,7 +118,7 @@
 				{#each LINKS as { label, href }}
 					<a
 						{href}
-						class="block px-3 py-2 rounded-md capitalize text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 "
+						class="block px-3 py-2 rounded-md capitalize text-base font-medium text-gray-700 hover:text-primary-400 hover:bg-gray-50 "
 						>{label}</a
 					>
 				{/each}

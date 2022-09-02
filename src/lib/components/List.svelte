@@ -49,9 +49,11 @@
 						</div>
 					</div>
 					{#if active === item.slug}
-						<p class="text-left" transition:slide={{ duration: 500, easing: quartOut }}>
-							{item.description}
-						</p>
+						<div in:slide|local={{ duration: 500, easing: quartOut }}>
+							<p class="text-left">
+								{item.description}
+							</p>
+						</div>
 					{/if}
 				</button>
 			</li>
