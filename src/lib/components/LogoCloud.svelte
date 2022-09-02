@@ -2,24 +2,24 @@
 	import Carousel from './Carousel.svelte';
 
 	const BEERS = [
-		{ src: 'images/Wakina-Wheat_ten-mile-creek_V1-01.png', alt: 'Wakina-Wheat beer' },
+		{ src: 'images/Wakina-Wheat_ten-mile-creek_V1-01.webp', alt: 'Wakina-Wheat beer' },
 		{
-			src: 'images/Twenty-Hour-Blueberry-Kettle-Sour_ten-mile-creek_1-01.png',
+			src: 'images/Twenty-Hour-Blueberry-Kettle-Sour_ten-mile-creek_1-01.webp',
 			alt: 'Twenty hour blueberry beer'
 		},
-		{ src: 'images/Last-Chance-Porter_ten-mile-creek_2-01.png', alt: 'Last Chance Porter' },
-		{ src: 'images/The-Creek_ten-mile-creek_texture_1.png', alt: 'The Creek beer' },
+		{ src: 'images/Last-Chance-Porter_ten-mile-creek_2-01.webp', alt: 'Last Chance Porter' },
+		{ src: 'images/The-Creek_ten-mile-creek_texture_1.webp', alt: 'The Creek beer' },
 		{
-			src: 'images/Goodkind-American-Light-Ale_ten-mile-creek_1-1.png',
+			src: 'images/Goodkind-American-Light-Ale_ten-mile-creek_1-1.webp',
 			alt: 'Goodkind American Light Ale'
 		},
-		{ src: 'images/Wood-Knocker_ten-mile-creek_2-01.png', alt: 'Wood Knocker beer' },
+		{ src: 'images/Wood-Knocker_ten-mile-creek_2-01.webp', alt: 'Wood Knocker beer' },
 		{
-			src: 'images/Betelgeuse-India-Pale-Ale_ten-mile-creek_pog_1.png',
+			src: 'images/Betelgeuse-India-Pale-Ale_ten-mile-creek_pog_1.webp',
 			alt: 'Betelgeuse India Pale Ale'
 		},
-		{ src: 'images/The-Grass_Wheat-Ale_ten-mile-creek_1-01.png', alt: 'The Grass Wheat Ale' },
-		{ src: 'images/Reginalds-Red_ten-mile-creek_4_pog-version_3.png', alt: 'Reginalds Red beer' }
+		{ src: 'images/The-Grass_Wheat-Ale_ten-mile-creek_1-01.webp', alt: 'The Grass Wheat Ale' },
+		{ src: 'images/Reginalds-Red_ten-mile-creek_4_pog-version_3.webp', alt: 'Reginalds Red beer' }
 	];
 </script>
 

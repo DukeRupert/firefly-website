@@ -2,7 +2,7 @@ export const LOGO = {
 	label: 'Ten Mile Creek Brewing',
 	href: '/',
 	img: {
-		src: '/images/Ten-Mile-Creek-Brewing-No-Circle.png',
+		src: '/images/Ten-Mile-Creek-Brewing-No-Circle.webp',
 		alt: 'Ten Mile Creek Brewing'
 	}
 };
@@ -45,7 +45,7 @@ export const COMPANY = {
 export const EVENTS = {
 	title: 'Events',
 	image: {
-		src: '/images/upcoming_events.jpg',
+		src: '/images/upcoming_events.webp',
 		alt: 'Ten Mile Creek Brewery taproom'
 	},
 	events: [
@@ -55,7 +55,7 @@ export const EVENTS = {
 			description: `Tunes in the taproom every Thursday  5:00-8:00pm join us at the taproom for some killer tunes!`,
 			date: new Date('2022-06-12'),
 			image: {
-				src: '/images/FINAL-SQUACH-SHIRT.jpg',
+				src: '/images/FINAL-SQUACH-SHIRT.webp',
 				alt: 'A sasquatch carrying a growler and goblet.'
 			}
 		},
@@ -65,7 +65,7 @@ export const EVENTS = {
 			description: `Each and every Tuesday and Thursday we like to thank our patrons by giving you a FREE pint when you fill a growler.   So, come on, what are you waiting for? Grab your growlers and join us for a pint and a fill this Tuesday or Thursday.`,
 			date: new Date('2022-08-04'),
 			image: {
-				src: '/images/1659368031682.jpg',
+				src: '/images/1659368031682.webp',
 				alt: 'A poster for live at ten mile creek brewery live music in august.'
 			}
 		},
@@ -75,7 +75,7 @@ export const EVENTS = {
 			description: `Live music on the walking mall! Join Ten Mile Creek, The Hawthorn and The Rialto for summer music and some good times! The music will start at 5:00pm and go until 8:00pm. So grab a drink and enjoy the show. Follow this event for more information on performances.`,
 			date: new Date('2022-08-06'),
 			image: {
-				src: '/images/FINAL-SQUACH-SHIRT.jpg',
+				src: '/images/FINAL-SQUACH-SHIRT.webp',
 				alt: 'A sasquatch carrying a growler and goblet.'
 			}
 		},
@@ -85,7 +85,7 @@ export const EVENTS = {
 			description: `YOGA in the TAPROOM?!?! You bet! The cost is $12 for the class and this comes with a pint of your choice. Please bring a mat if possible and join Loft Studio at Ten Mile Creek Brewery for Downdogs and Draughts!  Plus $2 of each participant goes to our sponsored non-profit of the month! This month we are supporting The Continental Divide Trail Coalition.`,
 			date: new Date('2022-08-07'),
 			image: {
-				src: '/images/DRINKBEERDOYOGA.jpg',
+				src: '/images/DRINKBEERDOYOGA.webp',
 				alt: 'A sasquatch carrying a growler and goblet.'
 			}
 		}

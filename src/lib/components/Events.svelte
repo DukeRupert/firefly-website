@@ -10,7 +10,13 @@
 		<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 			<div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
 				<div class="flex-shrink-0">
-					<img class="h-60 w-full object-cover" src={Events.image.src} alt={Events.image.alt} />
+					<img
+						class="h-60 w-full object-cover"
+						src={Events.image.src}
+						alt={Events.image.alt}
+						width="1200"
+						height="666"
+					/>
 				</div>
 				<div class="flex flex-1 flex-col justify-between bg-white p-6">
 					<div class="flex-1">

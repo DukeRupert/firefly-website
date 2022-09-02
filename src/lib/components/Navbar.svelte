@@ -29,6 +29,8 @@
 							alt={COMPANY.logo.img.alt}
 							class="h-16 w-auto sm:h-36"
 							src={COMPANY.logo.img.src}
+							width="400"
+							height="400"
 						/>
 					</a>
 					<div class="-mr-2 flex items-center md:hidden">
@@ -82,7 +84,13 @@
 		>
 			<div class="px-5 pt-4 flex items-center justify-between">
 				<div>
-					<img class="h-14 sm:h-16 w-auto" src={COMPANY.logo.img.src} alt={COMPANY.logo.img.alt} />
+					<img
+						class="h-14 sm:h-16 w-auto"
+						src={COMPANY.logo.img.src}
+						alt={COMPANY.logo.img.alt}
+						width="400"
+						height="400"
+					/>
 				</div>
 				<div class="-mr-2">
 					<button

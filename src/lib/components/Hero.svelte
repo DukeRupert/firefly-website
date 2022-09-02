@@ -15,7 +15,7 @@
 			href: '#services'
 		},
 		image: {
-			src: '/images/beer_flight.jpg',
+			src: '/images/beer_flight.webp',
 			alt: 'A flight of five beers on a bar.'
 		}
 	};
@@ -28,13 +28,19 @@
 		<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 			<div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
 				<div class="absolute inset-0">
-					<img class="h-full w-full object-cover" src={Hero.image.src} alt={Hero.image.alt} />
+					<img
+						class="h-full w-full object-cover"
+						src={Hero.image.src}
+						alt={Hero.image.alt}
+						width="1200"
+						height="800"
+					/>
 					<div class="absolute inset-0 opacity-40 bg-gray-800 mix-blend-multiply" />
 				</div>
 				<div class="relative px-4 py-24 sm:px-6 sm:py-32 lg:py-40 lg:px-8">
-					<h1 class="text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+					<h1 class="mx-auto text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
 						<span class="block text-white uppercase">{Hero.title.text}</span>
-						<span class="block text-primary-200 uppercase">{Hero.title.focus}</span>
+						<span class="block text-primary-300 uppercase">{Hero.title.focus}</span>
 						<!-- </h1>
 					<p class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">
 						Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat

@@ -26,6 +26,8 @@
 		out:fly={{ x: -200, duration: 300, easing: quadIn }}
 		{src}
 		{alt}
+		width="400"
+		height="400"
 		class="absolute h-25 w-auto md:h-60 object-contain"
 	/>
 {/each}

@@ -2,7 +2,7 @@
 	export let data = {
 		href: 'https://www.facebook.com/events/1223914174745622/?ref=newsfeed',
 		image: {
-			src: '/images/Band-Scheduling-Facebook-Mobile-Header.jpg',
+			src: '/images/Band-Scheduling-Facebook-Mobile-Header.webp',
 			alt: 'Live music banner and schedule'
 		},
 		title: 'Live on the Gulch',
