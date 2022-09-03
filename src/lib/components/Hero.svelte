@@ -24,7 +24,9 @@
 <div>
 	<!-- Hero card -->
 	<div class="relative mt-24 sm:mt-0">
-		<div class="absolute inset-x-0 bottom-0 h-1/2 bg-secondary-500" />
+		<div
+			class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-r from-secondary-400 to-secondary-700"
+		/>
 		<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 			<div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
 				<div class="absolute inset-0">

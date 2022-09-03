@@ -21,18 +21,18 @@
 				alt={data.image.alt}
 			/>
 			<div class="flex flex-col justify-between p-4 leading-normal">
-				<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+				<h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 					{data.title}
-				</h5>
+				</h2>
 				<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
 					{data.body}
 				</p>
 				<div
 					class="flex items-end justify-start align-middle space-x-2 mb-3 transform-gpu duration-150 ease-out-expo hover:translate-x-6 hover:scale-105"
 				>
-					<a class="text-xs text-primary-400" href={data.href}> Follow event </a>
+					<a class="text-xs text-primary-600" href={data.href}> Follow event </a>
 					<svg
-						class="inline-block h-4 w-4 text-primary-400"
+						class="inline-block h-4 w-4 text-primary-600"
 						width="24"
 						height="24"
 						viewBox="0 0 24 24"

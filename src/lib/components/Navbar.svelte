@@ -75,7 +75,7 @@
 
 	<!-- Mobile Menu -->
 	<div
-		class="absolute {$isMobileMenu
+		class="absolute expo-in opacity-100 translate-x-0 z-20 {$isMobileMenu
 			? 'expo-in opacity-100 translate-x-0 z-20'
 			: 'expo-out opacity-75 translate-x-full -z-10'} top-0 inset-x-0 p-2 transition transform origin-top-right duration-500 md:hidden"
 	>

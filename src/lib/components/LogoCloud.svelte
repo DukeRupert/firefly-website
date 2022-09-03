@@ -25,7 +25,9 @@
 
 <!-- Logo cloud -->
 <div class="bg-secondary-400">
-	<div class="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8 bg-secondary-500">
+	<div
+		class="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-secondary-400 to-secondary-700"
+	>
 		<h2 class="text-center text-3xl font-semibold text-gray-800 uppercase">Beers on Tap</h2>
 		<div class="relative mt-8 w-40 h-40  sm:w-60 sm:h-60 mx-auto">
 			<Carousel logos={BEERS} />

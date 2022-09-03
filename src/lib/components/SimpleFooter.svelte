@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { LINKS, COMPANY } from '$lib/constants';
+	import { GenericEmbed } from 'sveltekit-embed';
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -72,7 +73,17 @@
 				{/if}
 			{/each}
 		</div>
-		<p class="mt-8 text-center text-base text-gray-400">
+		<div class="mt-8">
+			<GenericEmbed
+				width="100%"
+				height="180px"
+				title="Google map"
+				src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.942954840013!2d-112.04112808440453!3d46.58836507913028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5343551885ea44c3%3A0xb93fedf7827e22c3!2sTen%20Mile%20Creek%20Brewery!5e0!3m2!1sen!2sus!4v1662215861259!5m2!1sen!2sus'}
+				frameborder="0"
+				SameSite="None"
+			/>
+		</div>
+		<p class="mt-8 text-center text-base text-primary-500">
 			&copy; {COMPANY.year}
 			{COMPANY.name}. All rights reserved.
 		</p>
