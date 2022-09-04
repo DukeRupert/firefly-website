@@ -13,9 +13,7 @@
 	}
 </script>
 
-<div
-	class="fixed top-0 left-0 w-full z-20 sm:relative sm:max-w-7xl sm:mx-auto bg-background md:bg-white"
->
+<div class="fixed top-0 left-0 w-full z-20 sm:relative sm:max-w-7xl sm:mx-auto bg-background">
 	<div class="relative pt-6 px-4 sm:px-6 lg:px-8">
 		<nav
 			class="relative flex items-center justify-between md:h-36 lg:justify-start"
@@ -27,7 +25,7 @@
 						<span class="sr-only">{COMPANY.logo.label}</span>
 						<img
 							alt={COMPANY.logo.img.alt}
-							class="h-16 w-auto sm:h-36"
+							class="h-16 w-auto sm:h-20"
 							src={COMPANY.logo.img.src}
 							width="400"
 							height="400"
@@ -59,7 +57,7 @@
 			</div>
 			<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
 				{#each LINKS as { label, href }}
-					<a {href} class="font-medium text-gray-800 hover:text-primary-400 capitalize">{label}</a>
+					<a {href} class="font-medium text-gray-400 hover:text-gray-500 capitalize">{label}</a>
 				{/each}
 
 				{#if login}

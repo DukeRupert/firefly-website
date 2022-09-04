@@ -4,14 +4,14 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<footer class="bg-white">
+<footer class="bg-background">
 	<div
 		class="mx-auto max-w-7xl overflow-hidden mt-16 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-700"
 	>
 		<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
 			{#each LINKS as { label, href }}
 				<div class="px-5 py-2">
-					<a {href} class="text-base capitalize text-gray-500 hover:text-gray-900">{label}</a>
+					<a {href} class="text-base capitalize text-gray-400 hover:text-gray-500">{label}</a>
 				</div>
 			{/each}
 		</nav>
@@ -59,6 +59,53 @@
 							/>
 						</svg>
 					</a>
+				{:else if type == 'yelp'}
+					<a {href} class="text-gray-400 hover:text-gray-500">
+						<span class="sr-only">Yelp</span>
+						<svg
+							class="h-6 w-6"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 384 512"
+							><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path
+								d="M42.9 240.32l99.62 48.61c19.2 9.4 16.2 37.51-4.5 42.71L30.5 358.45a22.79 22.79 0 0 1-28.21-19.6 197.16 197.16 0 0 1 9-85.32 22.8 22.8 0 0 1 31.61-13.21zm44 239.25a199.45 199.45 0 0 0 79.42 32.11A22.78 22.78 0 0 0 192.94 490l3.9-110.82c.7-21.3-25.5-31.91-39.81-16.1l-74.21 82.4a22.82 22.82 0 0 0 4.09 34.09zm145.34-109.92l58.81 94a22.93 22.93 0 0 0 34 5.5 198.36 198.36 0 0 0 52.71-67.61A23 23 0 0 0 364.17 370l-105.42-34.26c-20.31-6.5-37.81 15.8-26.51 33.91zm148.33-132.23a197.44 197.44 0 0 0-50.41-69.31 22.85 22.85 0 0 0-34 4.4l-62 91.92c-11.9 17.7 4.7 40.61 25.2 34.71L366 268.63a23 23 0 0 0 14.61-31.21zM62.11 30.18a22.86 22.86 0 0 0-9.9 32l104.12 180.44c11.7 20.2 42.61 11.9 42.61-11.4V22.88a22.67 22.67 0 0 0-24.5-22.8 320.37 320.37 0 0 0-112.33 30.1z"
+							/></svg
+						>
+					</a>
+				{:else if type == 'tripadvisor'}
+					<a {href} class="text-gray-400 hover:text-gray-500">
+						<span class="sr-only">Tripadvisor</span>
+						<svg
+							class="h-6 w-6"
+							fill="currentColor"
+							width="536.71"
+							height="348.17"
+							enable-background="new 0 0 3354.111 713.496"
+							version="1.1"
+							viewBox="0 0 536.71 348.17"
+							xml:space="preserve"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g transform="translate(-88.432 -183.66)">
+								<path
+									d="m577.1 287.15 43.049-46.836h-95.465c-47.792-32.646-105.51-51.659-167.93-51.659-62.342 0-119.9 19.054-167.61 51.659h-95.704l43.049 46.836c-26.387 24.075-42.929 58.754-42.929 97.259 0 72.665 58.914 131.58 131.58 131.58 34.519 0 65.968-13.313 89.446-35.077l42.172 45.919 42.172-45.879c23.478 21.764 54.887 35.037 89.406 35.037 72.665 0 131.66-58.913 131.66-131.58 0.039-38.545-16.502-73.223-42.89-97.259zm-351.92 186.31c-49.188 0-89.047-39.859-89.047-89.047s39.86-89.048 89.047-89.048 89.047 39.86 89.047 89.048-39.86 89.047-89.047 89.047zm131.62-91.638c0-58.595-42.61-108.9-98.853-130.38 30.413-12.716 63.776-19.771 98.813-19.771s68.439 7.055 98.853 19.771c-56.202 21.525-98.813 71.789-98.813 130.38zm131.58 91.638c-49.188 0-89.048-39.859-89.048-89.047s39.86-89.048 89.048-89.048 89.047 39.86 89.047 89.048-39.86 89.047-89.047 89.047zm0-135.76c-25.79 0-46.677 20.887-46.677 46.677 0 25.789 20.887 46.676 46.677 46.676 25.789 0 46.676-20.887 46.676-46.676-1e-3 -25.75-20.887-46.677-46.676-46.677zm-216.52 46.717c0 25.789-20.887 46.676-46.676 46.676s-46.676-20.887-46.676-46.676c0-25.79 20.887-46.677 46.676-46.677 25.789-0.04 46.676 20.887 46.676 46.677z"
+								/>
+							</g>
+						</svg>
+					</a>
+				{:else if type == 'foursquare'}
+					<a {href} class="text-gray-400 hover:text-gray-500">
+						<span class="sr-only">{type}</span>
+						<svg
+							class="h-6 w-6"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 368 512"
+							><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path
+								d="M323.1 3H49.9C12.4 3 0 31.3 0 49.1v433.8c0 20.3 12.1 27.7 18.2 30.1 6.2 2.5 22.8 4.6 32.9-7.1C180 356.5 182.2 354 182.2 354c3.1-3.4 3.4-3.1 6.8-3.1h83.4c35.1 0 40.6-25.2 44.3-39.7l48.6-243C373.8 25.8 363.1 3 323.1 3zm-16.3 73.8l-11.4 59.7c-1.2 6.5-9.5 13.2-16.9 13.2H172.1c-12 0-20.6 8.3-20.6 20.3v13c0 12 8.6 20.6 20.6 20.6h90.4c8.3 0 16.6 9.2 14.8 18.2-1.8 8.9-10.5 53.8-11.4 58.8-.9 4.9-6.8 13.5-16.9 13.5h-73.5c-13.5 0-17.2 1.8-26.5 12.6 0 0-8.9 11.4-89.5 108.3-.9.9-1.8.6-1.8-.3V75.9c0-7.7 6.8-16.6 16.6-16.6h219c8.2 0 15.6 7.7 13.5 17.5z"
+							/></svg
+						>
+					</a>
 				{:else if type == 'dribbble'}
 					<a {href} class="text-gray-400 hover:text-gray-500">
 						<span class="sr-only">Dribbble</span>
@@ -70,6 +117,19 @@
 							/>
 						</svg>
 					</a>
+				{:else}
+					<a {href} class="text-gray-400 hover:text-gray-500">
+						<span class="sr-only">{type}</span>
+						<svg
+							class="h-6 w-6"
+							fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 640 512"
+							><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path
+								d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"
+							/></svg
+						>
+					</a>
 				{/if}
 			{/each}
 		</div>
@@ -78,12 +138,12 @@
 				width="100%"
 				height="180px"
 				title="Google map"
-				src={'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.942954840013!2d-112.04112808440453!3d46.58836507913028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5343551885ea44c3%3A0xb93fedf7827e22c3!2sTen%20Mile%20Creek%20Brewery!5e0!3m2!1sen!2sus!4v1662215861259!5m2!1sen!2sus'}
+				src={COMPANY.mapEmbed}
 				frameborder="0"
 				SameSite="None"
 			/>
 		</div>
-		<p class="mt-8 text-center text-base text-primary-500">
+		<p class="mt-8 text-center text-base text-gray-400 ">
 			&copy; {COMPANY.year}
 			{COMPANY.name}. All rights reserved.
 		</p>

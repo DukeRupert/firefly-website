@@ -7,35 +7,35 @@ const config = {
 		extend: {
 			colors: {
 				primary: {
-					DEFAULT: '#A6450D',
-					50: '#F4A476',
-					100: '#F39863',
-					200: '#F07F3E',
-					300: '#ED6618',
-					400: '#CC5510',
-					500: '#A6450D',
-					600: '#722F09',
-					700: '#3E1A05',
-					800: '#0A0401',
+					DEFAULT: '#A60303',
+					50: '#FC6464',
+					100: '#FC5050',
+					200: '#FB2828',
+					300: '#F60404',
+					400: '#CE0404',
+					500: '#A60303',
+					600: '#6F0202',
+					700: '#380101',
+					800: '#010000',
 					900: '#000000'
 				},
 				secondary: {
-					DEFAULT: '#D9AE89',
+					DEFAULT: '#F2D95C',
 					50: '#FFFFFF',
-					100: '#FFFFFF',
-					200: '#F7EEE6',
-					300: '#EDD8C7',
-					400: '#E3C3A8',
-					500: '#D9AE89',
-					600: '#CB915F',
-					700: '#B7743B',
-					800: '#8C592D',
-					900: '#623E20'
+					100: '#FEFCF3',
+					200: '#FBF3CD',
+					300: '#F8EBA8',
+					400: '#F5E282',
+					500: '#F2D95C',
+					600: '#EECD28',
+					700: '#CDAE10',
+					800: '#99820C',
+					900: '#665608'
 				},
-				background: '#fff'
+				background: '#000'
 			},
 			fontFamily: {
-				sans: ['Playfair Display', ...defaultTheme.fontFamily.sans]
+				sans: ['Roboto', ...defaultTheme.fontFamily.sans]
 			},
 			transitionTimingFunction: {
 				'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',

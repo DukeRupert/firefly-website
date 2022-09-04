@@ -6,8 +6,8 @@
 	import Card from '$lib/components/Card.svelte';
 	import { EVENTS } from '$lib/constants';
 
-	const title = 'Ten Mile Creek Brewing | A somewhat organized community';
-	const description = `A somewhat organized community. Bringing you the best beer in Helena, MT.`;
+	const title = 'The Brewhouse - Way more than just a pub';
+	const description = `Welcome! The Brewhouse is one of Helena’s most respected restaurants. We take pride in our friendly`;
 </script>
 
 <svelte:head>
@@ -16,6 +16,3 @@
 </svelte:head>
 
 <Hero />
-<LogoCloud />
-<Events Events={EVENTS} />
-<Card />

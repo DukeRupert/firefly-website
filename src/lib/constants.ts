@@ -1,45 +1,74 @@
 export const LOGO = {
-	label: 'Ten Mile Creek Brewing',
+	label: 'The Brewhouse',
 	href: '/',
 	img: {
-		src: '/images/Ten-Mile-Creek-Brewing-No-Circle.webp',
-		alt: 'Ten Mile Creek Brewing'
+		src: '/images/brewhouselogo.webp',
+		alt: 'The Brewhouse'
 	}
 };
 
 export const LINKS = [
-	{ label: 'Beer', href: '/#beer' },
-	{ label: 'Events', href: '/#events' },
-	{ label: 'About', href: '/#about' },
-	{ label: 'Contact', href: '/#contact' },
-	{ label: 'Shop', href: '/#shop' }
+	{ label: 'Downstairs', href: '/downstairs-menu' },
+	{ label: 'Upstairs', href: '/upstairs-menu' },
+	{ label: 'Events', href: '/events' },
+	{ label: 'Contact', href: '/#contact' }
 ];
 
 export const CONTACT = {
 	phone: {
-		string: '406-502-1382',
-		href: 'tel:4065021382'
+		string: '406-457-9390',
+		href: 'tel:4064579390'
 	},
 	location: {
-		address: '48 N Last Chance Gulch',
+		address: '939 Getchell St',
 		city: 'Helena',
 		state: 'MT',
 		zip: '59601'
 	},
-	email: 'info@companyname.com'
+	email: 'rachel@helenabrewhouse.com'
 };
 
-export const SOCIAL = [
-	{ type: 'facebook', href: 'https://www.facebook.com/TenMileCreekBrewery/' },
-	{ type: 'instagram', href: 'https://www.instagram.com/explore/locations/1019701299/' }
+type Socials =
+	| 'facebook'
+	| 'instagram'
+	| 'twitter'
+	| 'yelp'
+	| 'github'
+	| 'tripadvisor'
+	| 'foursquare'
+	| 'zomato'
+	| 'dribbble';
+
+interface Social {
+	type: Socials;
+	href: string;
+}
+
+export const SOCIAL: Social[] = [
+	{ type: 'facebook', href: 'https://www.facebook.com/BrewhousePubGrille/' },
+	{ type: 'yelp', href: 'https://www.yelp.com/biz/brewhouse-pub-and-grille-helena' },
+	{
+		type: 'tripadvisor',
+		href: 'https://www.tripadvisor.com/Restaurant_Review-g45212-d583243-Reviews-Brewhouse_Pub_Grill-Helena_Montana.html'
+	},
+	{
+		type: 'foursquare',
+		href: 'https://foursquare.com/v/downstairs--the-brewhouse/50ee0054e4b01c4a87109474'
+	},
+	{
+		type: 'zomato',
+		href: 'https://www.zomato.com/helena-mt/brewhouse-pub-and-grille-helena'
+	}
 ];
 
 export const COMPANY = {
-	name: 'Ten Mile Creek Brewing',
+	name: 'The Brewhouse',
 	logo: LOGO,
 	contact: CONTACT,
 	social: SOCIAL,
-	year: 2022
+	year: 2022,
+	mapEmbed:
+		'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.470610347729!2d-112.03955468440422!3d46.5977018791307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534354e245c20b0f%3A0xb058c8076543ee3f!2sBrewhouse!5e0!3m2!1sen!2sus!4v1662295887062!5m2!1sen!2sus'
 };
 
 export const EVENTS = {
