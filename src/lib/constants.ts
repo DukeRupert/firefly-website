@@ -1,31 +1,30 @@
 export const LOGO = {
-	label: 'The Brewhouse',
+	label: 'Firefly Software',
 	href: '/',
-	img: {
-		src: '/images/brewhouselogo.webp',
-		alt: 'The Brewhouse'
+	image: {
+		src: '/images/firefly_logo_white.png',
+		alt: 'Firefly Software LLC logo'
 	}
 };
 
 export const LINKS = [
-	{ label: 'Downstairs', href: '/downstairs-menu' },
-	{ label: 'Upstairs', href: '/upstairs-menu' },
-	{ label: 'Events', href: '/events' },
-	{ label: 'Contact', href: '/#contact' }
+	{ label: 'Contact', href: '/about-us' },
+	{ label: 'About', href: '/contact-us' },
+	
 ];
 
 export const CONTACT = {
 	phone: {
-		string: '406-457-9390',
-		href: 'tel:4064579390'
+		string: '406-871-9875',
+		href: 'tel:4068719875'
 	},
 	location: {
-		address: '939 Getchell St',
+		address: '652 Jena Loop',
 		city: 'Helena',
 		state: 'MT',
-		zip: '59601'
+		zip: '59602'
 	},
-	email: 'rachel@helenabrewhouse.com'
+	email: 'logan@firefly.llc'
 };
 
 type Socials =
@@ -45,24 +44,11 @@ interface Social {
 }
 
 export const SOCIAL: Social[] = [
-	{ type: 'facebook', href: 'https://www.facebook.com/BrewhousePubGrille/' },
-	{ type: 'yelp', href: 'https://www.yelp.com/biz/brewhouse-pub-and-grille-helena' },
-	{
-		type: 'tripadvisor',
-		href: 'https://www.tripadvisor.com/Restaurant_Review-g45212-d583243-Reviews-Brewhouse_Pub_Grill-Helena_Montana.html'
-	},
-	{
-		type: 'foursquare',
-		href: 'https://foursquare.com/v/downstairs--the-brewhouse/50ee0054e4b01c4a87109474'
-	},
-	{
-		type: 'zomato',
-		href: 'https://www.zomato.com/helena-mt/brewhouse-pub-and-grille-helena'
-	}
+	
 ];
 
 export const COMPANY = {
-	name: 'The Brewhouse',
+	name: 'Firefly Software, LLC',
 	logo: LOGO,
 	contact: CONTACT,
 	social: SOCIAL,

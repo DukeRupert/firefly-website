@@ -13,10 +13,10 @@
 	}
 </script>
 
-<div class="fixed top-0 left-0 w-full z-20 sm:relative sm:max-w-7xl sm:mx-auto bg-background">
-	<div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+<div class="fixed top-0 left-0 w-full z-20 sm:relative sm:max-w-7xl sm:mx-auto bg-primary-500">
+	<div class="relative py-6 px-4 sm:px-6 lg:px-8">
 		<nav
-			class="relative flex items-center justify-between md:h-36 lg:justify-start"
+			class="relative flex items-center justify-between lg:justify-start"
 			aria-label="Global"
 		>
 			<div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
@@ -24,9 +24,9 @@
 					<a href={COMPANY.logo.href}>
 						<span class="sr-only">{COMPANY.logo.label}</span>
 						<img
-							alt={COMPANY.logo.img.alt}
-							class="h-16 w-auto sm:h-20"
-							src={COMPANY.logo.img.src}
+							alt={COMPANY.logo.image.alt}
+							class="h-12 w-auto sm:h-14"
+							src={COMPANY.logo.image.src}
 							width="400"
 							height="400"
 						/>
@@ -35,7 +35,7 @@
 						<button
 							on:click|preventDefault={openMenu}
 							type="button"
-							class="bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+							class="bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-200 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
 							aria-expanded="false"
 						>
 							<span class="sr-only">Open main menu</span>
@@ -57,7 +57,7 @@
 			</div>
 			<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
 				{#each LINKS as { label, href }}
-					<a {href} class="font-medium text-gray-300 hover:text-gray-400 capitalize">{label}</a>
+					<a {href} class="font-medium text-gray-300 hover:text-white capitalize">{label}</a>
 				{/each}
 
 				{#if login}
@@ -78,14 +78,14 @@
 			: 'expo-out opacity-75 translate-x-full -z-10'} top-0 inset-x-0 p-2 transition transform origin-top-right duration-500 md:hidden"
 	>
 		<div
-			class="rounded-lg shadow-md bg-background ring-1 ring-black ring-opacity-5 overflow-hidden"
+			class="rounded-lg shadow-md bg-primary-500 ring-1 ring-black ring-opacity-5 overflow-hidden"
 		>
 			<div class="px-5 pt-4 flex items-center justify-between">
 				<div>
 					<img
 						class="h-14 sm:h-16 w-auto"
-						src={COMPANY.logo.img.src}
-						alt={COMPANY.logo.img.alt}
+						src={COMPANY.logo.image.src}
+						alt={COMPANY.logo.image.alt}
 						width="400"
 						height="400"
 					/>
@@ -94,7 +94,7 @@
 					<button
 						on:click|preventDefault={closeMenu}
 						type="button"
-						class="bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-700 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+						class="bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-200 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
 					>
 						<span class="sr-only">Close main menu</span>
 						<!-- Heroicon name: outline/x -->
@@ -116,7 +116,7 @@
 				{#each LINKS as { label, href }}
 					<a
 						{href}
-						class="block px-3 py-2 rounded-md capitalize text-base font-medium text-gray-300 hover:text-primary-400 hover:bg-gray-50 "
+						class="block px-3 py-2 rounded-md capitalize text-base font-medium text-gray-300 hover:text-white hover:bg-primary-400 "
 						>{label}</a
 					>
 				{/each}
@@ -124,7 +124,7 @@
 					<div class="flex justify-center space-x-6">
 						{#each COMPANY.social as { type, href }}
 							{#if type == 'facebook'}
-								<a {href} class="text-gray-300 hover:text-gray-400 rounded-md hover:bg-gray-100">
+								<a {href} class="text-gray-300 hover:text-white rounded-md">
 									<span class="sr-only">Facebook</span>
 									<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 										<path
@@ -135,7 +135,7 @@
 									</svg>
 								</a>
 							{:else if type == 'instagram'}
-								<a {href} class="text-gray-300 hover:text-gray-400 rounded-md hover:bg-gray-100">
+								<a {href} class="text-gray-300 hover:text-white rounded-md hover:bg-primary-400">
 									<span class="sr-only">Instagram</span>
 									<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 										<path
@@ -146,7 +146,7 @@
 									</svg>
 								</a>
 							{:else if type == 'twitter'}
-								<a {href} class="text-gray-300 hover:text-gray-400 rounded-md hover:bg-gray-100">
+								<a {href} class="text-gray-300 hover:text-white rounded-md hover:bg-primary-400">
 									<span class="sr-only">Twitter</span>
 									<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 										<path
@@ -155,7 +155,7 @@
 									</svg>
 								</a>
 							{:else if type == 'github'}
-								<a {href} class="text-gray-300 hover:text-gray-400 rounded-md hover:bg-gray-100">
+								<a {href} class="text-gray-300 hover:text-white rounded-md hover:bg-primary-400">
 									<span class="sr-only">GitHub</span>
 									<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 										<path
@@ -166,7 +166,7 @@
 									</svg>
 								</a>
 							{:else if type == 'yelp'}
-								<a {href} class="text-gray-400 hover:text-gray-500">
+								<a {href} class="text-gray-300 hover:text-white rounded-md">
 									<span class="sr-only">Yelp</span>
 									<svg
 										class="h-8 w-8"
@@ -179,7 +179,7 @@
 									>
 								</a>
 							{:else if type == 'tripadvisor'}
-								<a {href} class="text-gray-400 hover:text-gray-500">
+								<a {href} class="text-gray-300 hover:text-white rounded-md">
 									<span class="sr-only">Tripadvisor</span>
 									<svg
 										class="h-8 w-8"
@@ -200,7 +200,7 @@
 									</svg>
 								</a>
 							{:else if type == 'foursquare'}
-								<a {href} class="text-gray-400 hover:text-gray-500">
+								<a {href} class="text-gray-300 hover:text-white rounded-md">
 									<span class="sr-only">{type}</span>
 									<svg
 										class="h-8 w-8"
@@ -213,7 +213,7 @@
 									>
 								</a>
 							{:else if type == 'dribbble'}
-								<a {href} class="text-gray-400 hover:text-gray-500">
+								<a {href} class="text-gray-300 hover:text-white rounded-md">
 									<span class="sr-only">Dribbble</span>
 									<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 										<path
@@ -224,7 +224,7 @@
 									</svg>
 								</a>
 							{:else}
-								<a {href} class="text-gray-400 hover:text-gray-500">
+								<a {href} class="text-gray-300 hover:text-white rounded-md">
 									<span class="sr-only">{type}</span>
 									<svg
 										class="h-8 w-8"

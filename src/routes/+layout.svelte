@@ -1,6 +1,4 @@
 <script>
-	import Fab from '$lib/components/FAB.svelte';
-
 	import Footer from '$lib/components/Footer.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import SimpleFooter from '$lib/components/SimpleFooter.svelte';
@@ -11,8 +9,7 @@
 <div class="relative h-full bg-background overflow-x-hidden">
 	<Navbar />
 	<div class="max-w-7xl h-full mx-auto">
-		<!-- <Fab /> -->
-
+		
 		<slot />
 		<SimpleFooter />
 	</div>
