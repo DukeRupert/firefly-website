@@ -41,7 +41,7 @@
 				<div class="relative px-4 py-24 sm:px-6 sm:py-32 lg:py-40 lg:px-8">
 					<h1 class="mx-auto text-center text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
 						<span class="block text-white uppercase">{Hero.title.text}</span>
-						<span class="block text-primary-300 uppercase">{Hero.title.focus}</span>
+						<span class="block text-primary-200 uppercase">{Hero.title.focus}</span>
 					</h1>
 					<p class="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
 						{Hero.text}
