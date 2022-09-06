@@ -45,6 +45,11 @@
 								{item.firstName}
 								{item.lastName}
 							</div>
+							<svg class="mx-1 hidden h-5 w-5 text-gray-300 md:block" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M11 0h3L9 20H6l5-20z" />
+              </svg>
+
+              <div class="text-base font-medium text-gray-300 capitalize">{item.title}, {item.company}</div>
 						</div>
 					</div>
 				</footer>

@@ -4,29 +4,31 @@
 
 	export let testimonials = [
 		{
-			firstName: 'Emilee',
-			lastName: 'Scott',
+			firstName: 'Kagen',
+			lastName: 'Cox',
+			title: 'owner',
+			company: 'Kagen Coffee & Crepes',
 			rating: 5,
 			review:
-				'We had amazing service!  The food was exceptional and the beer was good too.  We would definitely be frequent customers if we lived in the area.',
-			image: { src: '/images/profile/emileeScott.png', alt: 'profile image for Emilee Scott' }
+				'Firefly is an absolutely must have company working for you in your corner! they are super approachable, helpful and friendly! if you are looking to take your company to the next level I would highly recommend you give Firefly a call!',
+			image: { src: '/images/kc_icon.jpg', alt: 'profile image for Kagen Cox' }
 		},
-		{
-			firstName: 'Roz',
-			lastName: 'Rushing',
-			rating: 5,
-			review:
-				'Best food on our roadtrip! I’d drive another 25 hours for those sautéed mushrooms!! Yummy! Great staff and quick service. Don’t miss the opportunity to eat here! Tyler is an amazing server!',
-			image: { src: '/images/profile/scottRushing.png', alt: 'profile image for Roz Rushing' }
-		},
-		{
-			firstName: 'Jamie',
-			lastName: 'Janicke',
-			rating: 5,
-			review:
-				'Come to Helena often and this was our first time at the Brewhouse and WE WILL be back!! Great food and service with local beers. Freeking fantastic 👍🤩🤩🤩',
-			image: { src: '/images/profile/jamieJanicke.png', alt: 'profile image for Jamie Janicke' }
-		}
+		// {
+		// 	firstName: 'Roz',
+		// 	lastName: 'Rushing',
+		// 	rating: 5,
+		// 	review:
+		// 		'Best food on our roadtrip! I’d drive another 25 hours for those sautéed mushrooms!! Yummy! Great staff and quick service. Don’t miss the opportunity to eat here! Tyler is an amazing server!',
+		// 	image: { src: '/images/profile/scottRushing.png', alt: 'profile image for Roz Rushing' }
+		// },
+		// {
+		// 	firstName: 'Jamie',
+		// 	lastName: 'Janicke',
+		// 	rating: 5,
+		// 	review:
+		// 		'Come to Helena often and this was our first time at the Brewhouse and WE WILL be back!! Great food and service with local beers. Freeking fantastic 👍🤩🤩🤩',
+		// 	image: { src: '/images/profile/jamieJanicke.png', alt: 'profile image for Jamie Janicke' }
+		// }
 	];
 </script>
 

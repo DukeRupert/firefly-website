@@ -6,7 +6,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<div class="relative h-full bg-background overflow-x-hidden">
+<div class="relative h-full bg-background">
 	<Navbar />
 	<main class="max-w-7xl h-full mx-auto mt-24 md:mt-0">
 		<slot />
