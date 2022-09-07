@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Cta from '$lib/components/CTA.svelte';
-	
+	import CTA from '$lib/components/CTA.svelte';
 	import LogoCloud from '$lib/components/LogoCloud.svelte';
 	import Card from '$lib/components/Card.svelte';
 	import SimpleTestimonial from '$lib/components/SimpleTestimonial.svelte';
@@ -15,7 +14,7 @@
 			text: 'Professional',
 			focus: 'Web Developers'
 		},
-		text: `We create exceptional online experiences that compliment your business. Proudly based in Helena, MT.`,
+		text: `First impressions matter. We create exceptional online experiences to help our client's succeed. Proudly based in Helena, MT.`,
 		primaryAction: {
 			label: 'Get started',
 			href: '/contact-us'
@@ -39,3 +38,5 @@
 <SimpleHero {Hero} />
 <SimpleTestimonial />
 <Features />
+<CTA />
+<LogoCloud />

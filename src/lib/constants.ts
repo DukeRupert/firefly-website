@@ -54,7 +54,7 @@ export const COMPANY = {
 	social: SOCIAL,
 	year: 2022,
 	mapEmbed:
-		'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.470610347729!2d-112.03955468440422!3d46.5977018791307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534354e245c20b0f%3A0xb058c8076543ee3f!2sBrewhouse!5e0!3m2!1sen!2sus!4v1662295887062!5m2!1sen!2sus'
+		''
 };
 
 export const EVENTS = {

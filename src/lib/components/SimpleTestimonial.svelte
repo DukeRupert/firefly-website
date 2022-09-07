@@ -33,7 +33,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<section class="overflow-hidden bg-background py-12 md:py-20 lg:py-24">
+<section class="overflow-hidden bg-background py-12 md:py-20">
 	<div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<!-- {#each testimonials as t}
 			<div class="relative">

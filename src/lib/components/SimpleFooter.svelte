@@ -133,6 +133,7 @@
 				{/if}
 			{/each}
 		</div>
+		{#if COMPANY.mapEmbed}
 		<div class="mt-8">
 			<GenericEmbed
 				width="100%"
@@ -143,6 +144,11 @@
 				SameSite="None"
 			/>
 		</div>
+		{/if}
+		<div class="mt-8">
+			<img class="h-16 w-auto mx-auto" src={COMPANY.logo.image.src} alt={COMPANY.logo.image.alt} />
+		</div>
+		
 		<p class="mt-8 text-center text-base text-gray-400 ">
 			&copy; {COMPANY.year}
 			{COMPANY.name}. All rights reserved.

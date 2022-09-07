@@ -38,8 +38,7 @@
 							</div>
 							<h3 class="mt-8 text-lg font-medium tracking-tight text-gray-900">Ecommerce</h3>
 							<p class="mt-5 text-base text-gray-500">
-								We can help you setup a new store, create a custom storefront or streamline sales
-								operations today.
+								We can setup a new e-commerce store or create a  custom storefront to help you stand out from the competition.
 							</p>
 						</div>
 					</div>
