@@ -4,7 +4,7 @@ export const LOGO = {
 	label: 'Firefly Software',
 	href: '/',
 	image: {
-		src: '/images/firefly_logo_white.png',
+		src: '/images/firefly_icon.webp',
 		alt: 'Firefly Software LLC logo'
 	}
 };

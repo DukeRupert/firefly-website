@@ -14,7 +14,7 @@
 </script>
 
 <div class="fixed top-0 left-0 w-full z-20 sm:relative sm:max-w-7xl sm:mx-auto bg-primary-500">
-	<div class="relative py-6 px-4 sm:px-6 lg:px-8">
+	<div class="relative pt-6 px-4 sm:px-6 lg:px-8">
 		<nav
 			class="relative flex items-center justify-between lg:justify-start"
 			aria-label="Global"
@@ -25,10 +25,10 @@
 						<span class="sr-only">{COMPANY.logo.label}</span>
 						<img
 							alt={COMPANY.logo.image.alt}
-							class="h-12 w-auto sm:h-14"
+							class="h-[100px] w-auto"
 							src={COMPANY.logo.image.src}
-							width="400"
-							height="400"
+							width="578"
+							height="578"
 						/>
 					</a>
 					<!-- <div class="-mr-2 flex items-center md:hidden">

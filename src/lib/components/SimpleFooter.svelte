@@ -146,7 +146,7 @@
 		</div>
 		{/if}
 		<div class="mt-8">
-			<img class="h-16 w-auto mx-auto" src={COMPANY.logo.image.src} alt={COMPANY.logo.image.alt} />
+			<img class="w-[160px] mx-auto" src={COMPANY.logo.image.src} alt={COMPANY.logo.image.alt} width=578 height=578 />
 		</div>
 		
 		<p class="mt-8 text-center text-base text-gray-400 ">

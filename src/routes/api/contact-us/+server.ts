@@ -34,8 +34,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		if (res.ErrorCode) {
 			return new Response(res.Message, { status: res.ErrorCode });
-		} else {
-			return new Response(undefined, { status: 201 });
 		}
+			return new Response(undefined, { status: 201, redirect: '/success' });
+		
 	}
 };
