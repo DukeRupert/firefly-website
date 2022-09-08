@@ -6,6 +6,7 @@
 	import SimpleHero from '$lib/components/Hero/SimpleHero.svelte';
 	import Features from '$lib/components/Features.svelte'
 	import ContactForm from '$lib/components/ContactForm.svelte'
+	import SvelteSeo from 'svelte-seo'
 
 	const title = 'The Brewhouse - Way more than just a pub';
 	const description = `Welcome! The Brewhouse is one of Helena’s most respected restaurants. We take pride in our friendly`;
@@ -73,10 +74,24 @@
 	];
 </script>
 
-<svelte:head>
-	<title>{title}</title>
-	<meta name="description" content={description} />
-</svelte:head>
+<SvelteSeo 
+	title={title}
+	description={description}
+	openGraph={{
+    title: {title},
+    description: {description},
+    url: 'https://www.firefly.llc/',
+    type: 'website',
+    images: [
+      {
+        url: 'https://www.firefly.llc/images/firefly_icon.png',
+        width: 592,
+        height: 587,
+        alt: 'Firefly software, llc logo'
+      }
+     ]
+  }}
+/>
 
 <SimpleHero {Hero} />
 <SimpleTestimonial {testimonials} />

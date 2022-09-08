@@ -7,10 +7,10 @@
 		alt: string;
 	}
 	export let logos: Logo[] = [
-		{ src: 'images/logo-kcc.svg', alt: 'Kagen Coffee & Crepes logo' },
-		{ src: 'images/logo-osc.png', alt: 'One Sleep Company logo' },
-		{ src: 'images/logo-fts.png', alt: 'FtS Excavation logo' },
-		{ src: 'images/logo-trbc.jpg', alt: 'The Ridge Bible Church logo' },
+		{ src: 'images/logo-kcc.webp', alt: 'Kagen Coffee & Crepes logo' },
+		{ src: 'images/logo-osc.webp', alt: 'One Sleep Company logo' },
+		{ src: 'images/logo-fts.webp', alt: 'FtS Excavation logo' },
+		{ src: 'images/logo-trbc.webp', alt: 'The Ridge Bible Church logo' },
 		{ src: 'images/logo-ag.webp', alt: 'Aestus cRPG Guides logo' }
 	];
 	let index = 0;
