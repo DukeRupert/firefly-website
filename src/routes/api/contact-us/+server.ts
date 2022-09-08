@@ -1,19 +1,17 @@
 import postmark from 'postmark';
 import { POSTMARK_API_KEY } from '$lib/constants';
 import type { RequestHandler } from './$types';
+import { redirect } from '@sveltejs/kit';
 
 // Send an email:
 const client = new postmark.ServerClient(POSTMARK_API_KEY);
 
 export const POST: RequestHandler = async ({ request }) => {
-	const body = await request.formData();
-
-	// Convert formData to JSON
-	const entries = Object.fromEntries(body.entries());
+	const body = await request.json();
 
 	// Add date
 	const date = new Date().toString();
-	const data = { ...entries, date: date };
+	const data = { ...body, date: date };
 
 	if (data.password !== '') {
 		// Nice try bot
@@ -35,7 +33,8 @@ export const POST: RequestHandler = async ({ request }) => {
 		if (res.ErrorCode) {
 			return new Response(res.Message, { status: res.ErrorCode });
 		}
-			return new Response(undefined, { status: 201, redirect: '/success' });
+
+		return new Response('Success', { status: 200})
 		
 	}
 };

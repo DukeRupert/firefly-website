@@ -34,21 +34,6 @@
 		return Math.floor(Math.random() * max);
 	};
 
-	function handleSuccess(event) {
-		const { response, ...context } = event.detail;
-		goto('/success');
-	}
-
-	function handleError(event) {
-		const { error, ...context } = event.detail;
-		// `FelteSubmitError` contains a `response` property
-		// with the response from `fetch`
-		const response = error.response;
-		// Do something with the error
-		console.log(`Error : ${response.status} ${response.body}`);
-		// goto('/error');
-	}
-
 	interface Errors {
 		first: string;
 		last: string;
@@ -104,12 +89,28 @@
 			}
 			return errors;
 		},
+		onSubmit: async (values) => {
+			const response = await fetch('/api/contact-us', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(values)
+			})
+
+			if (response.ok) {
+				goto('/success')
+			} else {
+				goto ('/error')
+			}
+		},
 		extend: reporter
 	});
 
 	onMount(() => {
 		crewChoice = getRandomInt(crew.length);
 	});
+
 </script>
 
 <div id="contact-us" class="overflow-hidden bg-white mt-16 md:mt-24 lg:mt-32 py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
@@ -121,10 +122,6 @@
     <div class="mt-12">
 	<form
 	use:form
-	action="/api/contact-us"
-	method="POST"
-	on:feltesuccess={handleSuccess}
-	on:felteerror={handleError}
 	class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
 >
 	<div>
