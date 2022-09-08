@@ -26,10 +26,10 @@
 			<h1
 				class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl"
 			>
-				<span class="block text-gray-200 xl:inline">{Hero.title.text}</span>
-				<span class="block text-white xl:inline">{Hero.title.focus}</span>
+				<span class="block text-gray-900 dark:text-gray-100 xl:inline">{Hero.title.text}</span>
+				<span class="block text-primary-200 darK:text-white xl:inline">{Hero.title.focus}</span>
 			</h1>
-			<p class="mx-auto mt-3 max-w-md text-lg text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
+			<p class="mx-auto mt-3 max-w-md text-lg text-gray-600 dark:text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
 				{Hero.text}
 			</p>
 			<div class="mt-10 sm:flex sm:justify-center lg:justify-start">

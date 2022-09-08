@@ -19,7 +19,7 @@ const config = {
 					800: '#000000',
 					900: '#000000'
 				},
-				background: '#081040'
+				background: '#FFF'
 			},
 			fontFamily: {
 				sans: ['Roboto', ...defaultTheme.fontFamily.sans]

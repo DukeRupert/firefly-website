@@ -1,3 +1,5 @@
+import { dev } from '$app/environment'
+
 export const LOGO = {
 	label: 'Firefly Software',
 	href: '/',
@@ -8,8 +10,7 @@ export const LOGO = {
 };
 
 export const LINKS = [
-	{ label: 'Contact', href: '/about-us' },
-	{ label: 'About', href: '/contact-us' },
+	
 	
 ];
 
@@ -106,3 +107,5 @@ export const EVENTS = {
 		}
 	]
 };
+
+export const POSTMARK_API_KEY = dev ? import.meta.env.VITE_POSTMARK_API_KEY : process.env.POSTMARK_API_KEY;

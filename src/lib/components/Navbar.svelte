@@ -31,15 +31,15 @@
 							height="400"
 						/>
 					</a>
-					<div class="-mr-2 flex items-center md:hidden">
+					<!-- <div class="-mr-2 flex items-center md:hidden">
 						<button
 							on:click|preventDefault={openMenu}
 							type="button"
-							class="bg-background rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-200 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+							class="bg-primary-500 rounded-md p-2 inline-flex items-center justify-center text-gray-300 hover:text-gray-200 hover:bg-primary-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
 							aria-expanded="false"
 						>
 							<span class="sr-only">Open main menu</span>
-							<!-- Heroicon name: outline/menu -->
+							
 							<svg
 								class="h-8 w-8"
 								xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@
 								<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
 							</svg>
 						</button>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">

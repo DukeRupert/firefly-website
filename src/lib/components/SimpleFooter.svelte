@@ -4,7 +4,7 @@
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
-<footer class="bg-background">
+<footer class="bg-primary-500">
 	<div
 		class="mx-auto max-w-7xl overflow-hidden mt-16 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-700"
 	>

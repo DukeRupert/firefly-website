@@ -6,7 +6,7 @@
 		src: string;
 		alt: string;
 	}
-	const logos: Logo[] = [
+	export let logos: Logo[] = [
 		{ src: 'images/logo-kcc.svg', alt: 'Kagen Coffee & Crepes logo' },
 		{ src: 'images/logo-osc.png', alt: 'One Sleep Company logo' },
 		{ src: 'images/logo-fts.png', alt: 'FtS Excavation logo' },
@@ -26,7 +26,7 @@
 <div class="relative mt-16 md:mt-24 lg:mt-32 bg-white max-w-6xl mx-auto rounded-lg  py-16 sm:py-24 lg:py-32">
 	<div class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
 		<h2
-			class="text-center text-3xl font-extrabold sm:text-4xl uppercase text-gray-900 tracking-tight"
+			class="text-center text-3xl font-extrabold sm:text-2xl uppercase text-gray-900 tracking-tight"
 		>
 			Proudly trusted by
 		</h2>
